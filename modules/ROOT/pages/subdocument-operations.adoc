@@ -439,7 +439,7 @@ As a special extension, you can indicate the _last element_ of an array by using
 Use `some.array[-1]` as the path, which will return the element `0`.
 
 Each path component must conform as a JSON string, as if it were surrounded by quotes, and any character in the path which may invalidate it as a JSON string must be escaped by a backslash (`\`).
-In other words, the path component must match exactly the path inside the document itself.
+In other words, the path component must exactly match the path inside the document itself.
 For example:
 
 [source,json]
@@ -460,7 +460,7 @@ Considering the document
 
 A path such as 
  \`literal[]bracket`.\`literal.dot`.
-You can use double-backticks (pass:c[``]) to reference a literal backtick.
+You can use double-backticks (pass:c[``]) for reference to a literal backtick.
 
 If you need to combine both JSON _and_ path-syntax literals you can do so by escaping the component from any JSON string characters
 (e.g. a quote or backslash) and then encapsulating it in backticks (`pass:c[`path`]`):
